@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栃木グルメナビ | Tochigi Gourmet Guide</title>
+    <meta name="description" content="栃木県内の美味しいお店をジャンルやエリアから探せるグルメガイドアプリ。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header>
+        <div class="container">
+            <h1>栃木グルメナビ</h1>
+            <p>栃木の「美味しい」を、もっと身近に。</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- おすすめセクション -->
+        <section id="recommendation-hero" class="glass-card">
+            <h2>今日のおすすめ</h2>
+            <div id="featured-store" class="hero-content">
+                <!-- JSで動的に生成 -->
+                <p>読み込み中...</p>
+            </div>
+        </section>
+
+        <!-- フィルターセクション -->
+        <section class="filters glass-card">
+            <div class="filter-group">
+                <label for="area-filter">エリア</label>
+                <select id="area-filter">
+                    <option value="all">すべてのエリア</option>
+                    <option value="佐野市">佐野市</option>
+                    <option value="下野市">下野市</option>
+                    <option value="宇都宮市">宇都宮市</option>
+                    <option value="小山市">小山市</option>
+                    <option value="栃木市">栃木市</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="category-filter">ジャンル</label>
+                <select id="category-filter">
+                    <option value="all">すべてのジャンル</option>
+                    <option value="ラーメン">ラーメン</option>
+                    <option value="カフェ">カフェ</option>
+                    <option value="ご当地グルメ">ご当地グルメ</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- リストセクション -->
+        <section id="store-list" class="store-grid">
+            <!-- JSで動的に生成 -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tochigi Gourmet Navigation</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
